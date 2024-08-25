@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.form {
+  background: linear-gradient(rgba(177,74,0,0.3981967787114846), rgba(174,199,0,0.5606617647058824)),
+    url(./img/log-bg.jpg);
+  min-height: calc(100vh - 15px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contents {
+  background-color: #fff;
+
+  width: 60%;
+  position: absolute;
+  top: 18%;
+  left: 25%;
+  height: 450px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+}
+.content {
+  background-color: #272a38;
+  border-radius: 20px;
+  padding: 20px 14px;
+}
+.content h2 {
+  color: #fff;
+  font-size: 1.8em;
+}
+.content p {
+  color: #98a3b2;
+  font-size: 0.8em;
+}
+.content a {
+  font-size: 0.8rem;
+  margin-left: 0;
+}
+.content > form > div {
+  position: relative;
+}
+
+.content > form > div > label {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  right: 0;
+  color: #747d8e;
+}
+.content > form > div > input {
+  padding: 12px 8px;
+  width: 100%;
+  background-color: #3d404b;
+  border: none;
+  border-radius: 20px;
+  margin: 6px 0;
+}
+.content > form > div > input:focus + label {
+  top: 0%;
+  left: 0%;
+  margin-left: 8px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+  color: #b1bbd2e8;
+  font-size: 0.8rem;
+  transition: 0.2s;
+}
+.content > form > div > input:focus {
+  box-shadow: none;
+  outline: none;
+  border: 2px solid #64b7ff;
+  color: #fff;
+  padding: 16px 8px;
+}
+
+iframe {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.qform {
+  z-index: 3;
+  position: absolute;
+
+  bottom: 10%;
+  height: 70%;
+  background-color: rgba(0, 167, 251, 0.479);
+  padding: 6% 20%;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+}
+.qform h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.qform-group input {
+  border: none;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.qform .btn input {
+  padding: 14px 30px;
+  margin: 10px 0px;
+  background-color: rgba(39, 198, 174, 0.821);
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: 3px solid rgb(0, 255, 217);
+  cursor: pointer;
+}
+
+.list {
+  width: 100%;
+  height: 100vh;
+}
+.list table {
+  width: 75%;
+}
+@media (max-width: 992px) {
+  #login {
+    margin-top: -58.59px;
+  }
+}
+@media (max-width: 980px) {
+  .contents {
+    grid-template-columns: 1fr;
+  }
+  .content-text {
+    display: none;
+  }
+}
+
+/* userpannel */
